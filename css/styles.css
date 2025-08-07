@@ -3958,7 +3958,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .folio-entries .entry {
     flex    : none;
-    width   : 50%;
+    width   : 33.3333%;
     margin  : 0;
     padding : 0;
     overflow: hidden;
