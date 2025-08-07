@@ -35,7 +35,7 @@
  *      ## stats tabs
  * # PROJECT-WIDE SHARED STYLES
  *      ## section header
- *   
+ *      ## social list
  *      ## swiper overrides
  *      ## glightbox overrides
  * # GRID-BASED LAYOUTS
@@ -2755,6 +2755,48 @@ td:last-child {
 }
 
 /* ------------------------------------------------------------------- 
+ * ## social list
+ * ------------------------------------------------------------------- */
+.social-list {
+    display    : flex;
+    align-items: center;
+    list-style : none;
+    margin     : 0;
+}
+
+.social-list li {
+    padding-left: 0;
+    margin-right: 0.8rem;
+}
+
+.social-list li:last-child {
+    margin-right: 0;
+}
+
+.social-list a {
+    display    : flex;
+    align-items: center;
+}
+
+.social-list a:focus svg path,
+.social-list a:focus svg circle,
+.social-list a:hover svg path,
+.social-list a:hover svg circle {
+    fill: var(--color-white);
+}
+
+.social-list svg {
+    height: var(--vspace-0_875);
+    width : var(--vspace-0_875);
+}
+
+.social-list svg path,
+.social-list svg circle {
+    fill      : rgba(255, 255, 255, 0.5);
+    transition: all 0.5s;
+}
+
+/* ------------------------------------------------------------------- 
  * ## swiper overrides
  * ------------------------------------------------------------------- */
 .swiper-container .swiper-pagination-bullets .swiper-pagination-bullet {
@@ -3371,8 +3413,20 @@ td:last-child {
     margin-bottom : var(--vspace-1_25);
 }
 
+.s-intro__content-btns {
+    --color-btn           : var(--color-text-dark);
+    --color-btn-text      : var(--color-white);
+    --color-btn-hover     : var(--color-1);
+    --color-btn-hover-text: var(--color-white);
+    margin-top            : var(--vspace-2);
+}
 
+.s-intro__content-btns .btn {
+    margin-right: var(--vspace-0_375);
+}
 
+.s-intro__content-btns .btn:last-child {
+    margin-right: 0;
 }
 
 .s-intro__content-media {
@@ -3542,6 +3596,7 @@ td:last-child {
 .s-intro__content-media,
 .s-intro__content-title,
 .s-intro__content-pretitle,
+.s-intro__content-btns,
 .s-intro__btn-download,
 .s-intro__social,
 .s-intro__scroll-down {
@@ -3563,7 +3618,8 @@ td:last-child {
     transform          : translate(0.2em, 150px);
 }
 
-.s-intro__content-title, {
+.s-intro__content-title,
+.s-intro__content-btns {
     transition-property: opacity, transform;
     transform          : translateY(150px);
 }
@@ -3591,8 +3647,9 @@ td:last-child {
 }
 
 .no-js .s-intro__content-title,
+.no-js .s-intro__content-btns,
 .ss-show .s-intro__content-title,
-{
+.ss-show .s-intro__content-btns {
     opacity  : 1;
     transform: translateY(0);
 }
@@ -3618,7 +3675,9 @@ td:last-child {
     transition-delay: 0.45s;
 }
 
-
+.no-js .s-intro__content-btns,
+.ss-show .s-intro__content-btns {
+    transition-delay: 0.6s;
 }
 
 .no-js .s-intro__btn-download,
@@ -3700,8 +3759,23 @@ td:last-child {
         display: none;
     }
 
+    .s-intro__content-btns {
+        --color-btn                  : white;
+        --color-btn-text             : var(--color-text-dark);
+        --color-btn-hover            : var(--color-1);
+        --color-btn-hover-text       : white;
+        --color-btn-stroke           : white;
+        --color-btn-stroke-text      : white;
+        --color-btn-stroke-hover     : white;
+        --color-btn-stroke-hover-text: var(--color-text-dark);
+        padding-right                : 0;
+        max-width                    : 400px;
+        margin                       : var(--vspace-1) auto 0;
     }
 
+    .s-intro__content-btns .btn {
+        margin-right: 0;
+    }
 
     .s-intro__content-media {
         left: 0;
