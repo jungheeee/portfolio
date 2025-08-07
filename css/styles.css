@@ -35,7 +35,7 @@
  *      ## stats tabs
  * # PROJECT-WIDE SHARED STYLES
  *      ## section header
- *      ## social list
+ *   
  *      ## swiper overrides
  *      ## glightbox overrides
  * # GRID-BASED LAYOUTS
@@ -2752,48 +2752,6 @@ td:last-child {
 
 .section-header.light-on-dark::before {
     color: rgba(255, 255, 255, 0.15);
-}
-
-/* ------------------------------------------------------------------- 
- * ## social list
- * ------------------------------------------------------------------- */
-.social-list {
-    display    : flex;
-    align-items: center;
-    list-style : none;
-    margin     : 0;
-}
-
-.social-list li {
-    padding-left: 0;
-    margin-right: 0.8rem;
-}
-
-.social-list li:last-child {
-    margin-right: 0;
-}
-
-.social-list a {
-    display    : flex;
-    align-items: center;
-}
-
-.social-list a:focus svg path,
-.social-list a:focus svg circle,
-.social-list a:hover svg path,
-.social-list a:hover svg circle {
-    fill: var(--color-white);
-}
-
-.social-list svg {
-    height: var(--vspace-0_875);
-    width : var(--vspace-0_875);
-}
-
-.social-list svg path,
-.social-list svg circle {
-    fill      : rgba(255, 255, 255, 0.5);
-    transition: all 0.5s;
 }
 
 /* ------------------------------------------------------------------- 
