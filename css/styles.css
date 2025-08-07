@@ -3949,6 +3949,7 @@ td:last-child {
 }
 
 .folio-entries {
+    display:  flex; flex-wrap: wrap; gap: 2rem;
     --width-grid-max: 1400px;
     margin-top      : var(--vspace-0_5);
 }
