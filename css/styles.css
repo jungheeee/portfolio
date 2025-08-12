@@ -3950,7 +3950,7 @@ td:last-child {
 
 .folio-entries {
     display:  flex; flex-wrap: wrap; gap: 2rem;
-    --width-grid-max: 1400px;
+    
     margin-top      : var(--vspace-0_5);
 }
 
@@ -3959,7 +3959,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .folio-entries .entry {
     flex    : none;
-    width   : calc(33.3333% - 1.34rem);
+    width   : 33.3333%
     margin  : 0;
     padding : 0;
     overflow: hidden;
