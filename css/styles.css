@@ -3950,7 +3950,7 @@ td:last-child {
 
 .folio-entries {
     display:  flex; flex-wrap: wrap; 
-    --width-grid-max: 1920px;
+    --width-grid-max: 1800px;
     margin-top      : var(--vspace-0_5);
 }
 
@@ -4113,19 +4113,17 @@ td:last-child {
  * responsive:
  * works
  * ------------------------------------------------------------------- */
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 800px) {
     .folio-entries .entry__cat {
         font-size: calc(var(--text-size) * 0.7);
-        flex: 0 0 calc(33.3333% - 1.34rem) !important;
-        max-width: calc(33.3333% - 1.34rem) !important;
     }
 }
 
 
 @media screen and (max-width: 800px) and (min-width: 501px) {
     .folio-entries .entry {
-        flex: 0 0 calc(50% - 1rem) !important;
-        max-width: calc(50% - 1rem) !important;
+       flex: 0 0 calc(33.3333% - 1.34rem) !important;
+        max-width: calc(33.3333% - 1.34rem) !important;
     }
 }
 
@@ -4147,7 +4145,7 @@ td:last-child {
     .s-testimonials__cite {
         text-align: left;
     }
-}
+
 
 @media screen and (max-width: 500px) {
     .folio-entries .entry {
