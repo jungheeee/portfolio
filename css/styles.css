@@ -3949,7 +3949,7 @@ td:last-child {
 }
 
 .folio-entries {
-    display:  grid; grid-template-columns: repeat(3, 1fr);  gap: 15px;
+    display:  grid !important;; grid-template-columns: repeat(3, 1fr);  gap: 15px;
     --width-grid-max: 1400px;
     margin-top      : var(--vspace-0_5);
 }
@@ -3958,7 +3958,7 @@ td:last-child {
  * ## folio entries 
  * ------------------------------------------------------------------- */
 .folio-entries .entry {
-    flex    : none;
+    width: 100% !important;;
     margin  : 0;
     padding : 0;
     overflow: hidden;
