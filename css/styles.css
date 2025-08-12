@@ -3950,7 +3950,7 @@ td:last-child {
 
 .folio-entries {
     display:  flex; flex-wrap: wrap; gap: 2rem;
-    
+    --width-grid-max: 1400px;
     margin-top      : var(--vspace-0_5);
 }
 
@@ -3959,7 +3959,7 @@ td:last-child {
  * ------------------------------------------------------------------- */
 .folio-entries .entry {
     flex    : none;
-    width   : 33.3333%
+    /*width   : 33.3333%*/
     margin  : 0;
     padding : 0;
     overflow: hidden;
@@ -4113,10 +4113,28 @@ td:last-child {
  * responsive:
  * works
  * ------------------------------------------------------------------- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 801px) {
     .folio-entries .entry__cat {
         font-size: calc(var(--text-size) * 0.7);
+        flex: 0 0 calc(33.3333% - 1.34rem) !important;
+        max-width: calc(33.3333% - 1.34rem) !important;
     }
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 501px) {
+    .folio-entries .entry {
+        flex: 0 0 calc(50% - 1rem) !important;
+        max-width: calc(50% - 1rem) !important;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .folio-entries .entry {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
 
     .folio-entries .entry__title {
         font-size: calc(var(--text-size) * 0.85);
