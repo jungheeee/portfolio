@@ -3949,7 +3949,7 @@ td:last-child {
 }
 
 .folio-entries {
-    display:  flex; flex-wrap: wrap; gap: 20px;
+    display:  flex; flex-wrap: wrap; 
     --width-grid-max: 1920px;
     margin-top      : var(--vspace-0_5);
 }
