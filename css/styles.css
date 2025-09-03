@@ -3148,7 +3148,7 @@ td:last-child {
 }
 
 .s-header__menu-links .current a {
-    color: white;
+    color: black;
 }
 
 /* --------------------------------------------------------------------
@@ -3898,6 +3898,8 @@ td:last-child {
     list-style : none;
     font-size  : calc(var(--text-size) * 1.05);
     margin-left: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .s-about__list a {
@@ -4178,7 +4180,8 @@ td:last-child {
  * ------------------------------------------------------------------- */
 @media screen and (max-width: 1000px) {
     .counter-items .num {
-        font-size: var(--text-huge-1);
+        font-size: var(--text-huge-1); 
+        width: 33.33%;
     }
 }
 
