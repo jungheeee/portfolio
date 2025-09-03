@@ -3912,7 +3912,7 @@ td:last-child {
     margin-bottom: var(--vspace-0_625);
     display: flex;
     padding-left : 0;
-    gap: 40px;
+    gap: 30px;
     align-items: center;
 }
 
@@ -4185,7 +4185,9 @@ td:last-child {
 @media screen and (max-width: 1000px) {
     .counter-items .num {
         font-size: var(--text-huge-1); 
-        width: calc(33.33% - 20px);
+    }
+     .counter-items__item {
+        width: 33.33%; 
     }
 }
 
