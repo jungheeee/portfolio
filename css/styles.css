@@ -193,7 +193,7 @@
   /* others
    */
     --color-body-bg: var(--color-gray-1);
-    --color-border : rgb(255, 255, 255);
+    --color-border : rgba(0, 0, 0, .1);
     --border-radius: 5px;
 }
 
@@ -3092,7 +3092,8 @@ td:last-child {
     height          : var(--header-height);
     align-items     : center;
     justify-content : space-between;
-    background-color: white
+    background-color: #ffffff
+    border          : 1px solid rgba(255, 255, 255, 0.03);
     padding         : 0 var(--gutter);
     box-shadow      : var(--box-shadow);
 }
@@ -3156,7 +3157,7 @@ td:last-child {
 }
 
 .s-header__menu-links .current a {
-    color: black;
+    color: white;
 }
 
 /* --------------------------------------------------------------------
