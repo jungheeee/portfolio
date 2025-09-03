@@ -4157,7 +4157,7 @@ td:last-child {
 }
 
 .counter-items { display: flex;
-flex-wrap: wrap; justify-content: space-between; }
+flex-wrap: wrap;  }
 
 .counter-items__item {
     flex         : none;
