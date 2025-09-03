@@ -193,7 +193,7 @@
   /* others
    */
     --color-body-bg: var(--color-gray-1);
-    --color-border : rgba(0, 0, 0, .1);
+    --color-border : rgb(255, 255, 255);
     --border-radius: 5px;
 }
 
@@ -3093,7 +3093,7 @@ td:last-child {
     align-items     : center;
     justify-content : space-between;
     background-color: var(--color-3);
-    border          : 1px solid rgba(255, 255, 255, 0.03);
+    border          : 1px solid rgb(255, 255, 255);
     padding         : 0 var(--gutter);
     box-shadow      : var(--box-shadow);
 }
@@ -3157,7 +3157,7 @@ td:last-child {
 }
 
 .s-header__menu-links .current a {
-    color: white;
+    color: black;
 }
 
 /* --------------------------------------------------------------------
