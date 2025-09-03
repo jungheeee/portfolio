@@ -3914,6 +3914,7 @@ td:last-child {
     padding-left : 0;
     gap: 30px;
     align-items: center;
+    font-size: 16px;
 }
 
 .s-about__list span {
