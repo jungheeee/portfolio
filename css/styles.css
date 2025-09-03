@@ -3037,16 +3037,9 @@ td:last-child {
     --header-height : 72px;
     --logo-width    : 10.2rem;
     --width-grid-max: calc(var(--width-sixteen-cols) - calc(var(--gutter) * 2));
-    --box-shadow    : 0 1px 1px rgba(0, 0, 0, 0.02),
-                      0 2px 2px rgba(0, 0, 0, 0.02),
-                      0 4px 4px rgba(0, 0, 0, 0.02),
-                      0 8px 8px rgba(0, 0, 0, 0.02);
-    --box-shadow-2: 0 2px 2px rgba(0, 0, 0, 0.03),
-                    0 4px 4px rgba(0, 0, 0, 0.03),
-                    0 8px 8px rgba(0, 0, 0, 0.03),
-                    0 16px 16px rgba(0, 0, 0, 0.03);
+  
     z-index         : 100;
-    background-color: transparent;
+    background-color: white
     height          : var(--header-height);
     width           : 100%;
     position        : absolute;
@@ -3067,10 +3060,9 @@ td:last-child {
 .s-header.sticky {
     opacity         : 0;
     visibility      : hidden;
-    background-color: var(--color-3);
-    box-shadow      : var(--box-shadow);
+    background-color: white;
     border          : none;
-    border-bottom   : 1px solid rgba(255, 255, 255, 0.03);
+
     position        : fixed;
     top             : 0;
     left            : 0;
@@ -3092,10 +3084,9 @@ td:last-child {
     height          : var(--header-height);
     align-items     : center;
     justify-content : space-between;
-    background-color: #ffffff
-    border          : 1px solid rgba(255, 255, 255, 0.03);
+    background-color: white;
     padding         : 0 var(--gutter);
-    box-shadow      : var(--box-shadow);
+    
 }
 
 .s-header__block {
