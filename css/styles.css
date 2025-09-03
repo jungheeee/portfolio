@@ -3899,7 +3899,8 @@ td:last-child {
     font-size  : calc(var(--text-size) * 1.05);
     margin-left: 0;
     display: flex;
-    justify-content: space-between;
+    justify-items: center;
+    gap: 150px;
 }
 
 .s-about__list a {
@@ -3909,7 +3910,10 @@ td:last-child {
 .s-about__list li {
     font-weight  : 500;
     margin-bottom: var(--vspace-0_625);
+    display: flex;
     padding-left : 0;
+    gap: 40px;
+    align-items: center;
 }
 
 .s-about__list span {
