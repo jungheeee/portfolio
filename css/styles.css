@@ -4181,7 +4181,7 @@ td:last-child {
 @media screen and (max-width: 1000px) {
     .counter-items .num {
         font-size: var(--text-huge-1); 
-        width: 33.33%;
+        width: calc(33.33% - 20px);
     }
 }
 
