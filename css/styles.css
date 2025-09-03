@@ -3092,8 +3092,7 @@ td:last-child {
     height          : var(--header-height);
     align-items     : center;
     justify-content : space-between;
-    background-color: var(--color-3);
-    border          : 1px solid rgb(255, 255, 255);
+    background-color: white
     padding         : 0 var(--gutter);
     box-shadow      : var(--box-shadow);
 }
