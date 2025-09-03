@@ -4156,9 +4156,12 @@ td:last-child {
     margin-bottom: var(--vspace-0_75);
 }
 
+.counter-items { display: flex;
+flex-wrap: wrap; justify-content: space-between; }
+
 .counter-items__item {
     flex         : none;
-    width        : 50%;
+    width        : 33.33%;
     margin-bottom: var(--vspace-0_625);
 }
 
@@ -4187,7 +4190,7 @@ td:last-child {
         font-size: var(--text-huge-1); 
     }
      .counter-items__item {
-        width: 33.33%; 
+        width: 50%; 
     }
 }
 
