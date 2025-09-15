@@ -1506,9 +1506,11 @@ hr.fancy::before {
  * -------------------------------------------------------------------- */
 .lead,
 .attention-getter {
-    font-family: var(--font-1);
-    font-size  : var(--text-md);
-    line-height: var(--vspace-1_25);
+    font-size: 24px; font-weight: 700; letter-spacing: -1px; color: #2f302f; line-height: 150%
+}
+
+.attention-article {
+    font-size: 20px; font-weight: 400; letter-spacing: -1px;  color: #969696;
 }
 
 @media screen and (max-width: 800px) {
